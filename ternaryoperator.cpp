@@ -1,0 +1,10 @@
+#include <iostream>
+
+int main()
+{
+    int x = 10;
+
+    x > 5 ? std::cout << "PASSED" : std::cout << "FAILED";
+
+    return 0;
+}
