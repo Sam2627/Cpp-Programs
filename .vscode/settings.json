@@ -50,6 +50,12 @@
         "xutility": "cpp",
         "vector": "cpp",
         "string": "cpp",
-        "iomanip": "cpp"
+        "iomanip": "cpp",
+        "algorithm": "cpp",
+        "optional": "cpp",
+        "functional": "cpp",
+        "list": "cpp",
+        "unordered_map": "cpp",
+        "xhash": "cpp"
     }
 }
