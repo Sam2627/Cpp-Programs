@@ -14,20 +14,18 @@ public:
     vector<int> twoSum(vector<int> &nums, int target)
     {
         unordered_map<int, int> map;
-
         // Loop all value in array
         for (int i = 0; i < nums.size(); ++i)
         {
             // Get remain value need
-            int complement = target - nums[i];
+            int remain = target - nums[i];
             // Find in array if it have remain value, because find() return last if not found -> != nums.end()
-            if (map.find(complement) != map.end())
+            if (map.find(remain) != map.end())
             {
-                return {map[complement], i};
+                return {map[remain], i};
             }
             map[nums[i]] = i;
         }
-
         // Return empty if not found
         return {};
     }

@@ -1,10 +1,11 @@
+// 242. Valid Anagram : Given two strings s and t, return true if t is an anagram of s, and false otherwise.
+// Anagrama : word, phrase, or name formed by rearranging the letters of another.
+
 #include <iostream>
 #include <unordered_map>
 #include <string>
 
 using namespace std;
-
-// Anagram : a word, phrase, or name formed by rearranging the letters of another.
 
 class Solution
 {

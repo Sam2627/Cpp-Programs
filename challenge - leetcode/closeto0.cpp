@@ -1,12 +1,13 @@
+// 2239. Find Closest Number to Zero
+// Find number closest to zero in a array
+// If have 2 numbers have same distance get non-negative
+
 #include <iostream>
 #include <vector>
 #include <cmath>
 #include <algorithm>
 
 using namespace std;
-
-// 2239. Find Closest Number to Zero - Leetcode
-// Find number closest to zero, if have 2 numbers have same distance get non-negative
 
 class Solution
 {
