@@ -18,7 +18,9 @@ int main()
     x = x / 2;
     x /= 2;
 
-    int remainder = x % 2;
+    int remainder = 18 / 10;
+
+    std::cout << remainder;
 
     return 0;
 }

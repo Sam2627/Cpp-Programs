@@ -1,15 +1,15 @@
 #include <iostream>
 
 // Pointers is variable store a memory address of another variable. Give the address rather than give the value.
-// & address-of operator
-// * derefernce operator
+// & address-of operator : return address value
+// * derefernce operator : return value of address
 
 int main()
 {
 
     std::string name = "Sam";
 
-    // Create pointer must same data type as point to variable.
+    // Declares pointer must same data type as point to variable.
     std::string *pName = &name; // *pName is the address variable, &name is memory address value
 
     std::cout << "The pointer address value: " << pName << '\n';
@@ -25,8 +25,8 @@ int main()
 
     // Null pointers nullptr
     int *pointer = nullptr; // pointer with null address
-    int x = 10;
-    pointer = &x;
+    int x = 10;             // Create val x with value = 10
+    pointer = &x;           // assigned pointer with address memory of x
 
     if (pointer == nullptr)
     {
@@ -36,6 +36,9 @@ int main()
     {
         std::cout << "Pointer address was assigned at: " << pointer << '\n';
     }
+
+    // Declares a pointer a design to store the memort address of type Object
+    // Object *a = new Object();
 
     return 0;
 }

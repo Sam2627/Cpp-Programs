@@ -15,6 +15,7 @@ public:
     {
         unordered_map<int, int> map;
         // Loop all value in array
+
         for (int i = 0; i < nums.size(); ++i)
         {
             // Get remain value need
@@ -22,8 +23,10 @@ public:
             // Find in array if it have remain value, because find() return last if not found -> != nums.end()
             if (map.find(remain) != map.end())
             {
+                // map[remain] = pair value match with remain value.
                 return {map[remain], i};
             }
+            // Save pair of value and index, use later if find match remain value need
             map[nums[i]] = i;
         }
         // Return empty if not found
@@ -35,14 +38,12 @@ int main()
 {
     Solution sol;
     vector<int> nums = {2, 7, 11, 15};
-    int target = 9;
+    int target = 22;
     vector<int> ans = sol.twoSum(nums, target);
 
     if (ans.size() == 2)
     {
         cout << "Pair of numbers sum of " << target << ": ";
-        int size = sizeof(ans) / sizeof(ans[0]);
-
         for (const auto &an : ans)
         {
             cout << nums[an] << " ";
