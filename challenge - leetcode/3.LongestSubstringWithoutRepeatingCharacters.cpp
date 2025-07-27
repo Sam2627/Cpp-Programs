@@ -34,7 +34,9 @@ public:
             maxLength = max(maxLength, right - left + 1); // Update length if new value higher
 
             // Some code for get result string from charSet array, might vary due to unordered nature
-            // Maybe need test
+            // abcadxyz -> bcadxyz  - OK
+            // abcbdxyz -> cbdxyz   - OK
+            // abcdxycz -> abcdxy   - OK
             if (maxLength > length)
             {
                 result = ""; // Reset
@@ -79,10 +81,9 @@ int main()
     string s = "pwwkew";
     string result = "";
 
-    sol.lengthOfLongestSubstring(s);
-
     cout << "Max length: " << sol.lengthOfLongestSubstringWithHash(s) << '\n';
 
+    sol.lengthOfLongestSubstring(s);
     for (int i = 1; i < sol.result.size(); i += 2)
     {
         sol.result.insert(i, " ");
